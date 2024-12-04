@@ -26,6 +26,6 @@
 Содержит методы: </li>
 <ul><li><b>getTotal</b> - Это метод для получения суммы, на которую были заказаны товары за указанный срок.
 Принимает декодированный json,полученный от api. <br>
-<span style="color: #00f53a">Пример: </span><hr><pre>$total = $ApiHandler->getTotal($data);</pre></li><li><b>getQuantityProducts</b> - модуль для подсчета остатков на складе.Формирует массив с названием товара, его id и количеством.
+<span style="color: #00f53a">Пример: </span><hr><pre>$total = $ApiHandler->getTotal($data);</pre></li><li><b>getQuantityProducts</b> - метод для подсчета остатков на складе.Формирует массив с названием товара, его id и количеством.
 Принимает декодированный json,полученный от api <br><span style="color: #00f53a">Пример:</span><hr><pre>$products = $ApiHandler->getQuantityProducts($data);</pre></li>
-<li><b>getProductDetails</b> - модуль,формирующий итоговое представление информации о товарах.Он включает: id,название и количество товара.Принимает сформированный массив из getQuantityProducts.</li><span style="color: #00f53a">Пример</span><hr> <pre>$products = $ApiHandler->getProductDetails($products);</pre></ul></ol>
+<li><b>getProductDetails</b> - метод,формирующий итоговое представление информации о товарах.Он включает: id,название и количество товара.Принимает сформированный массив из getQuantityProducts.</li><span style="color: #00f53a">Пример</span><hr> <pre>$products = $ApiHandler->getProductDetails($products);</pre></ul></ol>
